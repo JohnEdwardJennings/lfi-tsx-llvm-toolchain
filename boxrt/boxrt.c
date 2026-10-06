@@ -90,7 +90,7 @@ _lfi_ret(void)
         "blr x30\n"
 #elif defined(__x86_64__)
         "leaq 0x4(%rip), %r11\n"
-        "jmpq *0x18(%r14)\n"
+        "jmpq *-0x20(%r14)\n"
 #elif defined(__riscv) && (__riscv_xlen == 64)
         "la ra, 24(x21)\n"
         "jalr ra\n"
