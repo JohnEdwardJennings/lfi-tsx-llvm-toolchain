@@ -16,7 +16,7 @@ else
     export ARCH=$2-lfi
 fi
 
-./build-llvm.sh $PREFIX
+# ./build-llvm.sh $PREFIX
 ./build-compiler-rt.sh $PREFIX
 ./build-musl.sh $PREFIX
 ./build-libcxx.sh $PREFIX
